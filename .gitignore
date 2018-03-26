@@ -1,0 +1,14 @@
+## Visual Studio Code
+.vscode/
+
+# Modules
+node_modules
+
+# Logs
+*.log
+
+# Envirorment Variables
+.env*
+
+# Serverless
+.serverless/
