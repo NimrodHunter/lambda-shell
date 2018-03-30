@@ -1,5 +1,6 @@
 const slsw = require('serverless-webpack');
 const nodeExternals = require('webpack-node-externals');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: slsw.lib.entries,
@@ -13,5 +14,8 @@ module.exports = {
 				loaders: ["babel-loader"]
 			}
 		]
-  }
+  },
+	plugins: [
+    new UglifyJsPlugin()
+  ]
 };
